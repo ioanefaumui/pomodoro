@@ -1,11 +1,11 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { StyledContainer } from "./Container.styles";
+import { Header } from "../components/Header";
 
 export function Container() {
   return (
     <StyledContainer>
-      <NavLink to={"/"}>Timer</NavLink>
-      <NavLink to={"/logs"}>Logs</NavLink>
+      <Header />
       <Outlet />
     </StyledContainer>
   );

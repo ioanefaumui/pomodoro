@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
+import { Container } from "./layouts/Container";
 import { Timer } from "./pages/Timer";
 import { Logs } from "./pages/Logs";
-import { Container } from "./layouts/Container";
 
 export const router = createBrowserRouter([
   {

@@ -1,6 +1,18 @@
 import styled from "styled-components";
 
 export const StyledContainer = styled.div`
-  background-color: ${(props) => props.theme.aliceblue};
-  width: 100%;
+  max-width: 74rem;
+  height: calc(100vh - 10rem);
+  margin: 5rem auto;
+  padding: 2.5rem;
+
+  background: ${(props) => props.theme.aliceblue};
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 640px) {
+    padding: 1rem;
+  }
 `;

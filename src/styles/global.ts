@@ -9,17 +9,16 @@ export const GlobalStyle = createGlobalStyle`
 
   :focus {
     outline: 0;
-    box-shadow: 0 0 0 2px ${(props) => props.theme.primary};
+    box-shadow: 0 0 0 2px ${(props) => props.theme.focus};
   }
 
   body {
-    display: grid;
-    place-items: center;
-    min-height: 100dvh;
-    padding: 2rem;
-    background-color: ${(props) => props.theme["slate-100"]};
+    background-color: ${(props) => props.theme["slate-400"]};
     color: ${(props) => props.theme.jetblack};
+    -webkit-font-smoothing: antialiased;
+    padding-inline: 2rem;
   }
+
 
   body, input, textarea, button {
     font-family: "Shippori Antique B1", sans-serif;
@@ -27,4 +26,13 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 640px) {
+    body {
+      padding-inline: 1rem; 
+    }
+  }
 `;
